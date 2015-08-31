@@ -1,0 +1,23 @@
+{
+  "name": "learning-react",
+  "version": "1.0.0",
+  "description": "react learning road trip",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SanCoder-Q/learning-react.git"
+  },
+  "keywords": [
+    "reactjs",
+    "leaning"
+  ],
+  "author": "SanCoder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SanCoder-Q/learning-react/issues"
+  },
+  "homepage": "https://github.com/SanCoder-Q/learning-react#readme"
+}
