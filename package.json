@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "jest",
-    "start": "node main.js"
+    "start": "gulp & node main.js"
   },
   "repository": {
     "type": "git",
@@ -24,14 +24,13 @@
   "dependencies": {
     "browserify": "^11.0.1",
     "envify": "^3.4.0",
+    "exorcist": "^0.4.0",
     "express": "^4.13.3",
     "gulp": "^3.9.0",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-uglify": "^1.4.0",
     "jest": "^0.1.40",
     "react": "^0.13.3",
     "reactify": "^1.1.1",
-    "vinyl-buffer": "^1.0.0",
+    "uglifyify": "^3.0.1",
     "vinyl-source-stream": "^1.1.0"
   }
 }
