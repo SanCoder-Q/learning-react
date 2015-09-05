@@ -15,12 +15,26 @@ var CommentBox = React.createClass({
     }
 });
 
+var commentListData = [
+    {'author':'SanCoder', 'text':'```var React = require("react");```'},
+    {'author':'Jackson', 'text':'```var Marked = require("marked");```'}
+];
+
 var CommentList = React.createClass({
     render: function() {
+        var commentListItems = this.props.data.map(
+            function(comment) {
+                return (
+                    <CommentText author={comment.author}>
+                        {comment.text}
+                    </CommentText>
+                );
+            }
+        );
+
         return (
             <div className='commentList'>
-                <CommentText author='SanCoder'>Hello! ```var React = require("react");```</CommentText>
-                <CommentText author='Jackson'>World!</CommentText>
+                {commentListItems}
             </div>
         );
     }
@@ -54,11 +68,11 @@ var App = React.createClass({
         return (
             <div className='app'>
                 <h1>Comment Text</h1>
-                <CommentList/>
+                <CommentList data={this.props.data}/>
                 <CommentForm/>
             </div>
         );
     }
 });
 
-React.render(<App/>, document.body);
+React.render(<App data={commentListData}/>, document.body);
