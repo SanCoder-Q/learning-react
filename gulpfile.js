@@ -17,4 +17,4 @@ var gulp = require('./gulp')([
 
 gulp.task('build', ['browserify', 'less']);
 
-gulp.task('default', ['watch']);
+gulp.task('default', ['browserify', 'less', 'watch']);
